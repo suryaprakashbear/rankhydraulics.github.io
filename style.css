@@ -1,0 +1,2051 @@
+*{
+	box-sizing: border-box;
+	background-color:#ffffff;
+	
+}
+
+::-webkit-scrollbar {
+	width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+	background: #89b98c;
+	border-radius: 12px;
+  }
+  ::-webkit-scrollbar-thumb {
+	background: #1c241e;
+	border-radius: 12px;
+  }  
+  
+  
+/****************** top navbar styling begin *************************/
+.topnavbar{
+	width:100%;
+	height:auto;
+}
+.topnavbar li{
+font-size:14px;
+float: right;
+border-right: 2px solid #000000;
+font-weight: 600;
+list-style: none;
+padding-right:5px;
+margin-right:10px;
+margin-bottom:5px;
+margin-top:-8px;
+}
+.topnavbar li:first-child{
+	border-right:none;
+}
+
+/************************** Top Navbar Ending ****************************/
+
+/*********************** Header styling begin  ************************/
+.headersection {
+	width:100%;
+	height:60px;
+	display:flex;
+	position: realtive;
+}
+.logosection{
+	width:25%;
+	height:60px;
+	align-items:center;
+	display: flex;
+	justify-content: center;
+}
+.logosection >a{
+	margin-left: 35px;
+}
+.navbar {
+	width:70%;
+	height:60px;
+}
+.navbar > ul{
+	display:flex;
+	width:100%;
+	gap:30px;
+	list-style: none;
+	align-items: center;
+	justify-content: space-between;
+	
+}
+.navbar ul li{
+	transition: all 200ms ease;
+}
+.navbar a{
+	text-decoration: none;
+	font-size: 14px;
+	font-weight: 600;
+	color:#000000;
+	margin-top:15px;
+}
+.navbar li:last-child{
+	margin-right:10px;
+}
+/* ************************************ hover animation for nav links begin ******************************** */
+.hover-underline-animation {
+	display: inline-block;
+	position: relative;
+	color: #0087ca;
+  }
+  
+  .hover-underline-animation:after {
+	content: '';
+	position: absolute;
+	width: 100%;
+	transform: scaleX(0);
+	height: 2px;
+	bottom: 0;
+	left: 0;
+	background-color: #0087ca;
+	transform-origin: bottom right;
+	transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+	transform: scaleX(1);
+	transform-origin: bottom left;
+  }
+  /*********************************************** ending hover animation for nav links **************************/
+
+ #burger{
+	display: none;
+	margin-top:5px;
+	margin-right:25px;
+ }
+ @media (max-width: 1030px) {
+
+    .logosection{
+		width:25%;
+		height:60px;
+		align-items:center;
+		display: flex;
+		justify-content: center;
+	}
+	.logosection >a{
+		margin-left: 100px;
+	}
+
+	#burger {
+		box-sizing: initial;
+		display: block;
+		width: 1rem;
+		color: #000000;
+		cursor: pointer;
+		margin-bottom: 0.5em;
+	}
+
+	#burger:focus {
+		border: none;
+		outline: none;
+	}
+
+	nav {
+		position: absolute;
+		right: 0;
+		top: 3em;
+		background: #ea580c;
+		box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+		clip-path: circle(0% at 100% 0);
+		transition: all 500ms ease-in-out;
+		border-radius:5px;
+		z-index:5;
+		
+	}
+
+	nav.show {
+		clip-path: circle(300% at 100% 0);
+		transition-duration: 300ms;
+		z-index:999;
+	}
+	nav ul {
+		flex-direction: column;
+		background-color: #ea580c;
+		padding-bottom:10px;
+		position:relative;
+		
+	}
+	.navbar li{
+		background-color: #ea580c;
+	}
+	.navbar a{
+		background-color: transparent;
+		color:white;
+	}
+	}
+	@media (max-width: 600px){
+    
+		nav {
+			position: absolute;
+			right: 0;
+			top: 3em;
+			background: #ea580c;
+			box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
+			clip-path: circle(0% at 100% 0);
+			transition: all 500ms ease-in-out;
+			border-radius:5px;
+			
+		}
+
+	}
+
+
+/********************** navbar section styling ending  **************************/
+
+
+/********************** top slider section styling Begin   *******************************/
+              
+       .swiper{
+		   width:100%;
+		   height:500px;
+		   background:#F7F7F7;
+		  position:relative;
+	   }
+	   .swiper-slide img{
+		   width:90%;
+		   height:100%;
+		   object-fit:fit;
+		   z-index:1;
+		   margin-left:5%
+	   }	
+     .swiperwrap{
+		 width:800px;
+		 height:200px;
+		 position:relative;
+		 bottom:80px;
+		 right:-275px;
+		 display:flex;
+		  background-color:#F7F7F7;
+	 }
+	 .mySwiper .swiper-slide-thumb-active {
+        opacity: 1;
+      }
+	  .textwrap{
+		  width:190px;
+		  height:180px;
+		  display:flex;
+		  flex-direction:column;
+		  align-items:center;
+		  justify-content:center;
+		  text-align:center;
+		  background-color:#CDB699;
+		  cursor:pointer;
+		  opacity: 0.8;
+	  }
+	  .textwrap h4{
+		  border-bottom:2px solid black;
+		   background-color:#CDB699;
+	  }
+	  .textwrap p{
+		   width:90%;
+		   background-color:#CDB699;
+	  }
+	  
+/******************** top slider section styling Ending   ********************************/
+  
+  
+  /************** section-2 styling begin **************************/
+  .section2{
+	  width:100%;
+	  height:800px;
+      position:absolute;
+      top:715px;
+      z-index:1;  
+	  background:#F7F7F7;
+	  overflow:hidden;
+  }
+  .anglebar{
+	  width:250px;
+	  height:320px;
+	  background:#555;
+	   transform: skew(120deg);
+	   position:absolute;
+	   top:50px;
+	   left:0;
+	   z-index:-1;
+  }
+  .reviewbox{
+	  width:60%;
+	  height:700px;
+	  margin-left:auto;
+	  margin-right:auto;
+	  z-index:1; 
+  }
+  .anglebar2{
+	   width:100px;
+	  height:220px;
+	  background:#CDB699;
+	   transform: skew(120deg);
+	   position:absolute;
+	   top:200px;
+	   right:80px;
+	   z-index:-1;
+	   overflow:hidden;
+  }
+  .drop1{
+	  position:absolute;
+	  width:100px;
+	  height:100px;
+	  border:2px solid #555;
+	  left:100px;
+	  top:650px;
+	  background-color:transparent;
+	 border-bottom-left-radius: 50px;
+	 border-bottom-right-radius: 50px;
+	 border-top-left-radius: 50px;
+  }
+  .drop2{
+	  position:absolute;
+	  width:75px;
+	  height:75px;
+	  border:2px solid #555;
+	  left:1100px;
+	  top:450px;
+	  background-color:#555;
+	 border-bottom-right-radius: 30px;
+	 border-top-left-radius: 30px;
+  }
+  /********************************************* comment box styling begin ****************************/
+  .comment_box{
+	  width:100%;
+	  height:300px;
+  }
+  .carousel{
+	  width:100%;
+	  height:100%;
+  }
+  .carousel-inner{
+    height:250px;
+   display:flex;
+   align-items:center;
+  }
+  .carousel-inner h5{
+	  align-items:center;
+	  text-align:left;
+	  margin-left:100px;
+	  margin-right:100px;
+  }
+  .carousel-inner p{
+	  align-items:center;
+	  text-align:center;
+  }
+  .apostrophebox{
+	  width:50px;
+	  height:50px;
+	 
+	  margin-left:150px;
+	  display:flex;
+	  justify-content:space-evenly;
+	  align-items:center;
+  }
+  .quote1{
+	  width:15px;
+	  height:25px;
+	  background-color:#CDB699;
+	    transform: skew(150deg);
+  }
+  /**********************comment box styling ending ****************************************/
+  /************************ client_proof styling begin *************************************/
+  .client_proof{
+	  width:100%;
+	  height:350px;
+	  margin-top:25px;
+	  display:flex;
+	  justify-content:space-evenly;
+	  align-items:center;
+  }
+  .projects{
+	  width:250px;
+	  height:300px;
+	  border-radius:5px;
+	 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	 background-color:#555;
+	 color:#CDB699;
+  }
+ .
+   .projecticons{
+	   width:100%;
+	   height:50px;
+   }
+   .projecticons .fas{
+      margin-top:15px;
+      margin-left:15px;	  
+	  width:50px;
+	   height:50px;
+	   border-radius:50px;
+	   display:flex;
+	  text-align:center;
+      justify-content:center;
+	  align-items:center;
+   }
+   
+  .clients{
+	  width:250px;
+	  height:300px;
+	  border-radius:5px;
+	 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	 background-color:#CDB699;
+	 color:#555;
+  }
+    .personicon{
+	  width:50px;
+	  height:50px;
+	  margin-left:15px;
+	  margin-top:15px;
+	  border-radius:50px;
+	  background-color:#EBE645;
+	  display:flex;
+	  align-items:center;
+	  text-align:center;
+	  justify-content:center;
+  }
+  .satisfaction{
+	  width:250px;
+	  height:300px;
+	  border-radius:5px;
+	 box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+	 color:#555;
+  }
+  .projectshead{
+	  width:100%;
+	  height:70px;
+	  background-color:transparent;
+	  color:#F1E0AC;
+  }
+  .projectshead h2{
+  background-color:transparent;
+  margin-left:15px;
+  }
+  .projectshead h4{
+  background-color:transparent;
+  margin-left:15px;
+  margin-top:-10px;
+  }
+  
+  .projectdescrip{
+	  width:100%;
+	  height:auto;
+	  background-color:transparent;
+  }
+  .projectdescrip p{
+  margin-left:15px;
+  margin-right:10px;
+  text-align:left;
+  margin-top:5px;
+  background-color:transparent;
+  color:#F1E0AC;
+  }
+  .clienthead{
+	  width:100%;
+	  height:70px;
+	  background-color:transparent;
+	  color:#555; 
+  }
+  .clienthead h2{
+	  background-color:transparent;
+      margin-left:15px;   
+  }
+  .clienthead h4{
+	  background-color:transparent;
+  margin-left:15px;
+  margin-top:-10px;
+  }
+  .clientdescrip {
+	   width:100%;
+	  height:auto;
+	  background-color:transparent;
+  }
+  .clientdescrip p{
+   margin-left:15px;
+  margin-right:10px;
+  text-align:left;
+  margin-top:5px;
+  background-color:transparent;
+  color:#555;
+  
+  }
+  .satisfaction{
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+	  flex-direction:column;
+  }
+  
+  
+  /************************** section-2 styling ending *******************************/
+  
+  /************************** section-3 styling begin ***********************/
+  .section3head{
+	  width:100%;
+	  height:100px;
+	position:absolute;
+	top:1515px;
+	display:flex;
+	text-align:center;
+	align-items:center;
+	justify-content:center;
+  }
+  .productcatalouge{
+	  width:100%;
+	  height:auto;
+	  position:absolute;
+	  top:1615px;
+	  
+  }
+  .grid{
+	  display:grid;
+	  justify-content:center;
+      align-items:center;
+	  text-align:center;
+	  margin-top:15px;
+	  grid-template-columns: 300px 300px 300px 300px;
+	  gap: 10px;
+  }
+  .productcatalouge ul li{
+	  list-style:none;
+	  width:300px;
+	  height:350px;
+	  
+  }
+  .imagecard{
+	  width:299px;
+	  height:250px;
+	  
+  }
+  .imagecard img{
+	  width:100%;
+	  height:100%;
+	  object-fit:contain;
+  }
+  .cardtext{
+	  width:299px;
+	  height:100px;
+	  
+  }
+  .cardtext .btn{
+	  border:none;
+	  background-color:#B33030;
+  }
+  .extension_button{
+	  width:100%;
+	  height:75px;
+	  display:flex;
+	  justify-content:center;
+	  text-align:center;
+	  align-items:center;
+  }
+  .extension_button .btn{
+	  background-color:#EDCDBB;
+	  border:none;
+	  width:120px;
+	 border-radius:0px;
+	 color:black;
+	 font-weight:bold;
+	 font-size:18px;
+  }
+  /************************* section -3 styling ending *************************/
+  
+  
+  /************************* section4 about rank styling begin *************************/
+  
+  .aboutus_section{
+	width:100%;
+    height:500px;
+    position:absolute; 
+    top:2435px; 
+  }
+  .rankheading{
+	 width:100%;
+     height:50px; 
+  }
+  .rankheading h2{
+	  margin-left:120px;
+	  margin-top:5px;
+	  
+  }
+  .aboutrank{
+	  width:90%;
+	  height:400px;
+    display:flex;
+    justify-content:space-evenly;
+    align-items:center;	
+	margin-left:5%;
+	margin-right:5%;
+  }
+  .rankimage{
+	  width:300px;
+	  height:350px;
+	  background-color:#86C6F4;
+  }
+  .rankimage img{
+	  max-width:100%;
+	  height:100%;
+	  object-fit:cover;
+  }
+  .ranktext{
+	  width:700px;
+	  height:350px;
+  }
+  .ranktext p{
+	width:80%;
+   align-items:center;	
+   margin-left:10%;
+   text-align:justify;
+   margin-top:20px;
+   font-weight:600;
+   opacity:0.8;
+  } 
+  /************************** section4 or about rank stuyling ending ******************************/
+  /************************** section5 styling begin ********************************************/
+  
+  .workcommitment{
+	  width:80%;
+	  height:300px;
+	  position:absolute;
+	  top:2950px;
+	  left:10%;
+	  right:10%;
+	  display:flex;  
+  }
+  .workcommitmenttext{
+	  width:100%;
+	  height:300px;  
+	  text-align:center;
+  }
+  .workcommitmenttext h3{
+	  margin-top:15px;
+	  
+  }
+  .workcommitmenttext p{
+	  width:80%;
+	  margin-left:10%;
+	  margin-right:10%;
+	  text-align:justify;
+	  font-weight:600;
+	  opacity:0.8;
+  }
+  .commintmenticons{
+	  width:100%;
+	  height:300px;
+	  display:grid;
+	  grid-template-columns: 50% 50%;
+  }
+   .commitment1{
+	  width:100%;
+	  height:150px;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+  .commitment1 img{
+	  width:50px;
+	  height:50px;
+	  object-fit:fit;
+  }
+  .commitment1 p{
+	  font-size:14px;
+	  font-weight:600;
+	  opacity:0.8;
+  }
+   .commitment2{
+	width:100%;
+	  height:150px;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+   .commitment2 img{
+	  width:50px;
+	  height:50px;
+	  object-fit:fit;
+  }
+  .commitment2 p{
+	  font-size:14px;
+	  font-weight:600;
+	  opacity:0.8;
+  }
+   .commitment3{
+	width:100%;
+	  height:150px;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+  .commitment3 img{
+	  width:50px;
+	  height:50px;
+	  object-fit:fit;
+  }
+  .commitment3 p{
+	  font-size:14px;
+	  font-weight:600;
+	  opacity:0.8;
+  }
+  
+   .commitment4{
+	  width:100%;
+	  height:150px;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+  .commitment4 img{
+	  width:50px;
+	  height:50px;
+	  object-fit:fit;
+  }
+  .commitment4 p{
+	  font-size:14px;
+	  font-weight:600;
+	  opacity:0.8;
+  }
+  /********************************* section5 styling ending ************************************/
+  .ourteam_section{
+	  width:80%;
+	  height:450px;
+	  position:absolute;
+	  top:3270px;
+	  left:10%;
+	  right:10%;
+	 
+  }
+  .ourteam_heading{
+	  width:100%;
+	  height:120px;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+  
+     .MySwiper{
+		 width:100%;
+		 height:400px;
+	 }
+  
+    .swiperimage img{
+		width:100%;
+		height:350px;
+		object-fit:cover;
+	}
+    .teaminfo{
+		width:100%;
+		height:70px;
+		margin-top:5px;
+		text-align:center;
+	}
+  /********************************** section5 styling ending ******************************/
+  
+  /********************************* section6 styling begin ********************************/
+  
+  
+  .services_weoffer{
+	  width:80%;
+	  height:450px;
+	  position:absolute;
+	  top:3850px;
+	  left:10%;
+	  right:10%;
+	  display:block;
+  }
+  .services_images{
+	  display:flex;
+  }
+  .services_heading{
+	  display:flex;
+	  text-align:center;
+	  align-items:center;
+	  justify-content:center;
+  }
+  .serviceimg1{
+	  width:100%;
+	  height:380px;
+	  float:left;
+	  margin-top:10px;
+	  
+  }
+  .serviceimg1 img{
+	  width:100%;
+	  height:100%;
+	 object-fit: cover;
+  }
+  .fleximages{
+	  width:100%;
+	  height:380px;	 
+	  margin-top:10px;
+	  display:grid;
+	  grid-template-columns: 50% 50%;
+  }
+  .serviceimg2{
+	  width:100%;
+	  height:190px;
+	  
+  }
+  .serviceimg2 img{
+	  width:100%;
+	  height:190px;
+	  object-fit:cover;
+  }
+  .serviceimg3{  
+	  width:100%;
+	  height:190px;
+	  
+	  
+  }
+  .serviceimg4{
+	  width:100%;
+      height:190px;
+	  
+	  
+  }
+  .serviceimg5{
+	  width:100%;
+	 height:190px;
+	  
+  }
+  
+  /********************************* section6 styling ending *********************************/
+  /********************************* section7 or our partners styling begin *******************/
+  .ourpartners{
+	 width:80%;
+     height:460px;
+     position:absolute;
+     top:4210px;
+	 left:10%;
+	 right:10%;
+     display:flex;
+     flex-direction:column;
+     text-align:center;
+     align-items:center;
+     justify-content:center;	 
+  }
+  .ourpartners1{
+	  width:100%;
+	  height:200px;
+	  display:flex;
+	  
+  }
+  .ourpartners1 .partimg1{
+	  width:25%;
+	  height:100%;
+	  
+  }
+   .ourpartners1 .partimg2{
+	  width:25%;
+	  height:100%;
+	  
+  }
+   .ourpartners1 .partimg3{
+	  width:25%;
+	  height:100%;
+	 
+  }
+   .ourpartners1 .partimg4{
+	  width:25%;
+	  height:100%;
+	 
+  }
+  .ourpartners2{
+	  width:100%;
+	  height:200px;
+	  display:flex;
+	  
+	  margin-top:5px;
+	  justify-content:center;
+  }
+  
+  .ourpartners2 .partimg5{
+	   width:auto;
+	  height:100%;
+	  
+  }
+  .ourpartners2 .partimg6{
+	   width:auto;
+	  height:100%;
+	 
+  }
+  
+  .ourpartners2 .partimg7{
+	   width:auto;
+	  height:100%;
+	  
+  }
+ /********************************* our Partner styling ending **************************/
+/********************************* our journey styling begin ****************************/
+  .ourjourney{
+	width:80%;
+	height:750px;
+	
+	position:absolute;
+	top:4680px;
+	left:10%;
+	right:10%;
+  }
+  
+   .ourjourney_text{
+       width:100%;
+       height:150px;
+       text-align:center;
+	   }
+    .ourjourney_text h3{
+	   margin-top:20px;
+	}
+	.ourjourney_text p{
+		font-weight:600;
+		opacity:0.8;
+		
+	}
+  .ourjourney_images{
+	  width:100%;
+	  height:570px;
+	  display:flex;
+	 justify-content:center;
+  }
+    .ourjourneyimg1{
+		width:98%;
+		height:550px;
+		margin-left:2%;
+		margin-top:5px;
+	}
+	.ourimage1{
+		width:95%;
+		height:240px;		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	}
+	   /******************** image overlay on hover styling begin **************************/
+	   
+	   
+	   .hover-img {
+			  /*background-color: #000;
+			  color: #fff;
+			  display: inline-block;
+			  margin: 8px;
+			  max-width: 320px;
+			  min-width: 240px;*/
+			  overflow: hidden;
+			  position: relative;
+			  text-align: center;
+			  width: 100%;
+			  height:100%
+			}
+
+			.hover-img * {
+			  transition: all 0.45s ease;
+			}
+
+			.hover-img:before,
+			.hover-img:after {
+			  background-color: rgba(0, 0, 0, 0.5);
+			 /* border-top: 32px solid rgba(0, 0, 0, 0.5);
+			  border-bottom: 32px solid rgba(0, 0, 0, 0.5);
+			  */
+			  position: absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  content: '';
+			  transition: all 0.3s ease;
+			  z-index: 1;
+			  opacity: 0;
+			  transform: scaleY(2);
+			}
+
+			.hover-img img {
+			  width:100%;
+			  height:100%;
+			  object-fit:cover;
+			  backface-visibility: hidden;
+			}
+
+			.hover-img figcaption {
+			  position: absolute;
+			  top: 0;
+			  bottom: 0;
+			  left: 0;
+			  right: 0;
+			  align-items: center;
+			  z-index: 1;
+			  display: flex;
+			  flex-direction: column;
+			  justify-content: center;
+			  line-height: 1em;
+			  opacity: 0;
+			  z-index: 2;
+			  transition-delay: 0.1s;
+			  font-size: 16px;
+			  font-family: sans-serif;
+			  font-weight: 400;
+			  letter-spacing: 1px;
+			  text-transform: uppercase;
+			}
+
+			.hover-img:hover:before,
+			.hover-img:hover:after {
+			  transform: scale(1);
+			  opacity: 1;
+			}
+
+			.hover-img:hover > img {
+			  opacity: 0.7;
+			}
+
+			.hover-img:hover figcaption {
+			  opacity: 0.9;
+			}
+	   
+	   
+	   /************************ image overlay on hover styling ending ***********************/
+	   
+	   
+	   
+	.ourimage1 img{
+		max-width:100%;
+		height:100%;
+		object-fit:cover;	
+	}
+	.ourimage2{
+		width:95%;
+		height:290px;
+		margin-top:20px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		
+	}
+	.ourimage2 img{
+		max-width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+    .ourjourneyimg2{
+		width:98%;
+		height:560px;
+		margin-top:5px;
+	}
+	.ourimage3{
+		width:95%;
+		height:290px;
+        display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		
+	}
+	.ourimage3 img{
+		max-width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+	.ourimage4{
+		width:95%;
+		height:240px;	
+		margin-top:20px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+		
+	}
+	.ourimage4 img{
+		max-width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+	.ourjourneyimg3{
+		width:98%;
+		height:560px;
+		display:flex;
+		flex-direction:column;
+        justify-content:center;	
+        margin-top:0px;		
+	}
+	.ourimage5{
+		width:95%;
+		height:340px;		
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+	}
+	.ourimage5 img{
+		max-width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+   .ourimage6{
+	    width:95%;
+		height:190px;	
+		margin-top:20px;
+		display:flex;
+		justify-content:center;
+		align-items:center;
+		text-align:center;
+   }
+  .ourimage6 img{
+		width:100%;
+		height:100%;
+		object-fit:cover;
+	}
+  /**************************************section7 styling ending ***************************/
+  
+  /*************************************** section8 or subscription styling begin **********************/
+  .subscription{
+    width:100%;
+	height:600px;
+	position:absolute;
+	top:5450px;
+	
+  }	  
+  .newsletter{
+	  width:100%;
+	  height:150px;
+	 
+	  background-color:#86C6F4;
+	  display:flex;
+	  align-items:center;
+  }
+       .newslettertext{
+	  width:40%;
+	  height:150px;
+	  background-color:#86C6F4;
+	  text-align:center;
+	  display:flex;
+	  align-items:center;
+	  flex-direction:column;
+  }
+  
+  .newslettersignup{
+	  width:60%;
+	  height:150px;
+	 background-color:#86C6F4; 
+	 text-align:center;
+	 display:flex;
+	 align-items:center;
+	 justify-content:center;
+  }
+  .newslettersignup .signin {
+	  width:400px;
+	  height:50px;
+	  background-color:#86C6F4;
+	  border-radius:50px;
+	  border:1px solid black;
+  }
+  .newslettersignup input{
+	  background-color:#86C6F4;
+  }
+  .newslettersignup form{
+  background-color:#86C6F4;
+  }
+  .newslettersignup .submitbutton{
+	  border-radius:50px;
+	  height:50px;
+	  width:100px;
+	  background-color:#000000;
+	  color:white;
+	  border:none;
+	  position:absolute;
+	  right:200px;
+	  opacity:0.8;
+  }
+  .appointment{
+	  width:100%;
+	  height:450px;
+	  display:flex;
+	  background-color:#B5DEFF;
+  }
+  .addresscard{
+	  width:100%;
+	  height:400px;
+	  
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  text-decoration:none;
+	  background-color:#B5DEFF;
+  }
+  .address_card{
+	  width:300px;
+	  height:350px;
+	  border-radius:5px;
+	  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+      color:white;
+	  background-color:#000000;
+  }
+  .address_card h3{
+     margin-left:30px;
+	 margin-top:15px;
+	 background-color:transparent;
+  }
+  .address_card p{
+	  width:80%;
+	  margin-left:10%;
+	  text-align:left;
+	  background-color:transparent;
+  }
+  .address_card a{
+	  background-color:transparent;
+	  color:white;
+  }
+  .address_card i{
+	  background-color:transparent;
+  }
+  .appointmentbox{
+	  width:100%;
+	  height:400px;	  
+	  display:flex;
+	  align-items:center;
+	  flex-direction:column;
+	  background-color:#B5DEFF;
+  }
+  .appointmentbox form{
+	 text-align:center;
+	 background-color:transparent;
+  }
+  .appointmentbox .form-select{
+	  width:190px;
+	  float:right;
+	  margin-top:15px;
+	  margin-right:20px;
+	  height:35px;
+	  align-items:center;
+	  background-color:transparent;
+	 
+	  
+  }
+  .appointmentbox input{
+	  height:35px;
+	  margin:15px;
+	  border-radius:5px;
+	  background-color:transparent;
+  }
+  .appointmentbox .email{
+	  margin-left:5px;
+  }
+  .appointmentbox button{
+	  position:relative;
+	  width:120px;
+	  height:40px;
+	  left:-140px;
+	  border-radius:5px;
+	  background-color:#000000;
+	  color:white;
+	  border:1px solid black;
+  }
+  
+  
+  .googlemap{
+	  width:100%;
+	  height:400px;
+	  display:flex;
+	  align-items:center;
+	  justify-content:center;
+  }
+  .mapbody{
+	  width:80%;
+	  height:250px;
+	  border:5px solid white;
+	  border-radius:5px;
+	  background-color:transparent;
+  }
+  
+  /********************************** section8 or subscription section styling ending **************************/
+  
+  /**************************** section9 or footer section styling begin ********************************/
+  
+  .footer{
+	  width:100%;
+	  height:700px;
+	  position:absolute;
+	  top:6050px;
+	  background:#495371;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+  .footer1{
+	  width:80%;
+	  height:400px;
+	  display:flex;
+	  background-color:transparent;
+  }
+  .footer1a{
+	  width:300px;
+	  height:400px;	 
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  background-color:transparent;
+  }
+  .footer1a button{
+	  height:50px;
+	  border:none;
+	  border:1px solid white;
+	  width:250px;
+	  font-weight:bold;
+	  background-color:transparent;
+	  color:white;
+	  border-radius:5px;
+  }
+  .footer1a p{
+	  background-color:transparent;
+	  color:white;
+  }
+  .footer1a .socailicons{
+  background-color:transparent;
+  }
+  .footer1a i{
+	  font-size:20px;
+	  color:white;
+  }
+  .footer1a .bi{
+	  background-color:transparent;
+  }
+  .footer1b{
+	  width:300px;
+	  height:400px;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  background-color:transparent;
+  }
+ .footer1b h3{
+	 background-color:transparent;
+	 color:white;
+ }
+  .footer1b ul li{
+	  list-style:none;
+	text-align:left;
+	background-color:transparent;
+	color:white;
+  }
+  .footer1b .services_we_offer{
+	  background-color:transparent;
+  }
+  .footer1c{
+	  width:300px;
+	  height:400px;	
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  background-color:transparent;
+  }
+  .footer1c ul {
+	  list-style:none;
+	  text-align:left;
+	  background-color:transparent;
+  }
+  .footer1c h3{
+	  background-color:transparent;
+	  color:white;
+  }
+  .footer1c li{
+	  background-color:transparent;
+	  color:white;
+  }
+  .footer1d{	  
+	  width:300px;
+	  height:400px;	 
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+	  background-color:transparent
+  }
+ .footer1d .footeradd{
+	 background-color:#495371;
+  
+ }
+ .footer1d .footeradd h3{
+	 float:left;
+	 margin-left:25px;
+ }
+  .footer2{
+	  width:80%;
+	  height:100px;
+	  display:flex;	 
+  }
+  .contentliscence{
+	  width:100%;
+	  height:auto;
+	  text-align:center;
+	  background-color:#495371;
+  }
+  .contentliscence p{
+	  background-color:transparent;
+  }
+  .paid_partnership{
+	  width:100%;
+	  height:auto;
+	  display:flex;
+	  align-items:center;
+	  text-align:center;
+	  justify-content:space-evenly;
+	  background-color:#495371;
+  }
+  .partner1{
+  width:75px;
+  height:75px; 
+  background-color:#86C6F4;
+  }
+  .partner2{
+  width:75px;
+  height:75px;
+  background-color:#86C6F4;
+  }
+  .partner3{
+	 width:75px;
+  height:75px;
+  border:1px solid black; 
+  background-color:#86C6F4;
+  }
+  .footer3{
+	  width:80%;
+	  height:50px;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+	  background-color:transparent;
+	  color:white;
+  }
+  /******************************************** footer styling ending ******************************/
+  /************************************** home page styling end ***********************************/
+  
+  /******************************************** about us page styling begin ***************************/
+  .abouthead{
+	  width:100%;
+	  height:auto;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+	  background-color:#F7F7F7;
+	  margin-top:50px;
+  }
+  .aboutimg{
+	  width:100%;
+	  height:100%;
+  }
+ .aboutusdetails{
+	 width:90%;
+	 height:350px;
+	 display:flex;
+	 justify-content:center;
+	 align-items:center;
+	 margin-top:20px;
+ }
+.textdetails{
+	width:100%;
+	height:350px;
+	display:flex;
+	flex-direction:column;
+	align-items:center;
+	justify-content:center;
+}
+.imagesection{
+	width:100%;
+	height:350px;
+	display:flex;
+	flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  
+}
+.imagesection img{
+	  object-fit:fit;
+}
+ 
+  .staffdetails{
+	  width:100%;
+	  height:500px;
+	  margin-top:1px;
+	  display:flex;
+  }
+  .staffimg{
+	  width:100%;
+	  height:500px;
+	  background-image:url("images/industrial_background1.jpeg");
+	  background-repeat:no-repeat;
+	  background-size: 100% 100%;
+      display:flex;
+      justify-content:center;
+      align-items:center;	  
+  }
+  .staffimg img{
+	  width:95%;
+	  height:450px;
+	  border-radius:5px;
+	  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  }
+  .stafftext{
+	  width:100%;
+	  height:500px;
+	  text-align:center;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+  }
+  .staffcommitment{
+	  width:90%;
+	  height:400px;
+	  display:grid;
+	  grid-template-columns: 50% 50%;
+	  
+  }
+  .satffcommitment1{
+	  width:100%;
+	  height:200px;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+  }
+  .satffcommitment1 img{
+          width:50px;
+          height:50px;
+          object-fit:fit;
+  }
+ 
+  .satffcommitment2{
+	  width:100%;
+	  height:200px;
+      display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;	  
+  }
+  .satffcommitment2 img{
+	   width:50px;
+          height:50px;
+          object-fit:fit;
+	  
+  }
+  .satffcommitment3{
+	  width:100%;
+	  height:200px;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+  }
+  .satffcommitment3 img{
+          width:50px;
+          height:50px;
+          object-fit:fit;
+  }
+  
+  .satffcommitment4{
+	  width:100%;
+	  height:200px;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+  }
+  
+  .satffcommitment4 img{
+	      width:50px;
+          height:50px;
+          object-fit:fit;
+  }
+  
+  /******************************** sataff section ending *************************/
+  /******************************** our team section starting *******************/
+  .our_team_section{
+	  width:100%;
+	  height:550px;
+	  display:flex;
+	  justify-content:center;
+	  margin-top:10px;
+	  margin-bottom:5px;
+  }
+  
+  .our_team_inaboutus{
+	  width:80%;
+	  height:550px; 
+	  
+  }
+  
+  /*********************************** our team section ending ********************/
+  
+  .footerataboutus{
+	  width:100%;
+	  height:700px;
+	  background:#495371;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center; 	  
+  }
+  
+  
+  /********************************about us page styling ending **********************************/
+  /******************************** products page styling begin **********************************/
+ /*
+  main{
+	width:80%;
+	height:auto;
+	margin-left:10%;
+	margin-right:10%;
+	border:1px solid black;
+	margin-top:20px;
+  }
+  .pulleys{
+	  width:100%;
+	  height:auto;
+  }
+  .pulleys .heading{
+	  width:100%;
+	  height:50px;
+  }
+  .heading h3{
+	   margin-left:20px;
+	  margin-top:7px;
+	  float:left;
+  }
+  .pulleysdesc{
+	width:100%;
+    height:auto;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:5px;
+  }
+  .pulleysdesc .pulley{
+	  width:350px;
+	  height:450px;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  margin-left:5px;
+	  margin-top:10px;
+	  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+	  border-radius:5px; 
+  }
+  .pulley img{
+	 width:300px;
+	  height:300px;
+	  object-fit:fit; 
+  }
+ .motors{
+	 width:100%;
+	  height:auto;
+ }
+  .motors .heading{
+	  width:100%;
+	  height:50px;
+  }
+  .motorsdesc{
+	width:100%;
+    height:auto;
+	display:grid;
+	grid-template-columns:1fr 1fr 1fr;
+	grid-gap:5px;  
+  }
+  .motorsdesc .motor{
+	 width:350px;
+	  height:450px;
+	  display:flex;
+	  flex-direction:column;
+	  align-items:center;
+	  justify-content:center;
+	  margin-left:5px;
+	  margin-top:10px;
+	  margin-bottom:10px;
+	  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;  
+	  border-radius:5px;
+  }
+  .motor img{
+	 width:300px;
+	  height:300px;
+	  object-fit:fit; 
+  }
+  */
+ .products_header{
+	 width:100%;
+	 height:auto;
+	 display:flex;
+	 justify-content:center;
+ }
+ .products_header img{
+	 width:100%;
+ }
+
+
+ .products{
+    width:80%;
+	height:auto;
+	margin-left:10%;
+	margin-right:10%;
+	margin-top:20px; 
+	display:flex;
+	flex-direction:column;
+  }
+  .Hoses{
+	  width:100%;
+	  height:550px;
+	  margin-top:15px;
+	  margin-bottom:50px;
+  }
+  .hose_images{
+	  display:grid;
+	  grid-template-columns:1fr 1fr 1fr 1fr;
+	  grid-template-rows:1fr 1fr;
+	  width:90%;
+	  height:550px;
+	  margin-left:5%;
+  }
+  .hose_images figure{
+	  display:flex;
+	  flex-direction:column;
+  }
+  .readmore{
+	  border:none;
+	  background-color: #f44336;
+	  height:30px;
+	  color:white;
+  }
+  .ptb{
+      width:100%;
+	  height:350px;
+	  margin-top:15px;
+	  margin-bottom:15px; 
+  }
+  .ptb_images{
+	  display:grid;
+	  grid-template-columns:1fr 1fr 1fr 1fr;
+	  grid-template-rows:1fr;
+	  width:90%;
+	  height:255px; 
+	  margin-left:5%;
+  }
+  /***************** footer section styling at products page ***************************/
+   .footeratproducts{
+	  width:100%;
+	  height:700px;
+	  background:#495371;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center; 	  
+  }
+  /************************ products page styling ending *************************/
+  
+  /************************ services page styling starting **********************/
+ /* .rank_services{
+	 width:100%;	 
+	 height:auto;
+	 border:1px solid black;
+	 margin-top:15px;
+  }
+  .rank_services .services1{
+	  width:100%;
+	  height:500px;
+	  border:1px solid black;
+  }
+  .service_images{
+	  width:80%;
+	  height:400px;
+	  margin-left:10%;
+	  margin-right:10%;
+	  display:grid;
+	  grid-template-columns:1fr 1fr;
+	  grid-gap:15px;
+  }
+  .service_images img{
+	  width:100%;
+	  height:180px;
+	  object-fit:fit;
+	  border-radius:5px;
+  }
+ */
+ .service_header{
+	 width:100%;
+	 height:400px;
+	 margin-top:20px;
+	 display:flex;
+	 justify-content:center;
+	 align-items:center;
+ }
+ .service_header img{
+	 width:100%;
+	 height:100%;
+	 object-fit:cover;
+ }
+ .rankservices{
+	 width:100%;
+	 height:auto;
+ }
+ .rankservicetext{
+	 width:100%;
+	 height:500px;
+	 display:flex;
+	 flex-direction:column;
+	 text-align:center;
+	 align-items:center;
+	 justify-content:center;
+ }
+ .rankserviceimage{
+	 width:100%;
+	 height:460px;
+ }
+ .rankserviceimage .rankpartners{
+	 width:80%;
+     height:460px;
+     display:flex;
+     flex-direction:column;
+     text-align:center;
+     align-items:center;
+     justify-content:center;
+     margin-left:10%;	 
+  }
+  .rankpartners1{
+	  width:100%;
+	  height:200px;
+	  display:flex;  
+  }
+  .rankpartners1 .partimg1{
+	  width:25%;
+	  height:100%;
+  }
+   .rankpartners1 .partimg2{
+	  width:25%;
+	  height:100%;  
+  }
+   .rankpartners1 .partimg3{
+	  width:25%;
+	  height:100%; 
+  }
+   .rankpartners1 .partimg4{
+	  width:25%;
+	  height:100%; 
+  }
+  .rankpartners2{
+	  width:100%;
+	  height:200px;
+	  display:flex;
+	  margin-top:5px;
+	 justify-content:center;
+  }
+  
+  .rankpartners2 .partimg5{
+	   width:auto;
+	  height:100%;
+  }
+  .rankpartners2 .partimg6{
+	   width:auto;
+	  height:100%;
+  }
+  
+  .rankpartners2 .partimg7{
+	   width:auto;
+	  height:100%;
+  }
+  
+  .product_services_desc{
+	  width:100%;
+	  height:500px;
+	  display:flex;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center;
+  }
+  .brand1{
+	width:250px;
+	height:450px;	
+  }
+  .brand1 ul li{
+	  list-style:none;
+	  margin-top:15px;
+	  margin-left:15px;
+      text-align:left;
+  }
+  .brand1 a{
+	  text-decoration:none;
+	  color:black;
+  }
+  .brand1 img{
+	  max-width:100%;
+	  height:150px;
+	  object-fit:fit;
+  }
+ /********************* hoses services section begin**********************/
+ .hoseheading{
+	 width:100%;
+	 height:100px;
+	 background-color:#EFFFFD;
+ }
+ .rankhoseservices{
+	 width:100%;
+	 height:400px;
+	 
+	 display:flex;
+ }
+ .hosedescription{
+	 width:100%;
+	 height:400px;
+	
+	 display:flex;
+	 flex-direction:column;
+	 justify-content:center;
+	 align-items:center;
+ }
+ .hosescarousel{
+	 width:100%;
+	 height:400px;
+	 
+ }
+ 
+    .hosescarousel .swiper {
+        width:500px;
+        height: 100%;
+		
+      }
+
+     .hosescarousel .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+    .hosescarousel  .swiper-slide img {
+        width: 100%;
+        height: 80%;
+        object-fit: fit;
+		
+      }
+ 
+ /***************** footer section styling at services page ***************************/
+   .footeratservices{
+	  width:100%;
+	  height:700px;
+	  background:#495371;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center; 	  
+  }
+  /************************ services page styling ending *************************/
+ 
+ /********************************** projects page styling ********************/
+ .projecttopnav{
+	 width:100%;
+	 height:350px;
+	 margin-top:20px;
+	 background:#ECECEC;
+ }
+ .projecttopnav img{
+	 width:100%;
+	 height:100%;
+	 object-fit:cover;
+ }
+ 
+ 
+ .projectspage{
+	 width:80%;
+	 height:auto;
+	 margin-left:10%;
+	 margin-right:10%;
+	 margin-top:20px;
+ }
+ .projectheading{
+	 width:100%;
+	 height:60px;
+	 text-align:left;
+ }
+ .projectheading h3{
+	 margin-top:15px;
+ }
+ .project_info{
+	 width:100%;
+	 height:auto;
+	 display:flex;
+	 justify-content:center;
+	 margin-top:15px;
+ }
+ .project_info figure{
+	 width:350px;
+	 height:350px;
+ }
+ 
+ 
+ .footeratprojects{
+	  width:100%;
+	  height:700px;
+	  background:#495371;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center; 	  
+  }
+ 
+/************************** end of projects **********************/
+/*********************** styling section of contact us ***********************/
+
+     .mapofrank{
+		 width:100%;
+		 height:550px;
+		 border:1px solid black;
+		 margin-top:25px;
+		 
+	 }
+	 
+	 
+	 .contactusbox{
+		 width:100%;
+		 height:auto;
+		 border:1px solid black;
+	 }
+	 .subscription_at_contact{
+		 width:100%;
+	height:600px;
+	 }
+	 
+	 .footeratcontacts{
+	  width:100%;
+	  height:700px;
+	  background:#495371;
+	  display:flex;
+	  flex-direction:column;
+	  justify-content:center;
+	  align-items:center;
+	  text-align:center; 	  
+  }
